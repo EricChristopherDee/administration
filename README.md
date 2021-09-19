@@ -18,6 +18,12 @@ clear clears the screen (powershell)
 
 cls in command prompt ..
 
+cat shows contents of file
+
+more shows all contents with a prompt for each section
+
+cat -head or cat -tail with a number ie cat -head 10 shows the file up to those lines, like more does 
+
 === Linux === 
 -
 linux has two operations for "help"
@@ -30,6 +36,9 @@ ls -l shows extra details, and stands for long
 history does the same thing
 
 clear clears the screen
+
+head name of file
+tail name of file shows only 10 lines each
 
 ==== Both ====
 -
