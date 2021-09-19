@@ -12,6 +12,12 @@ typing .\ then tab allows cycling through locations from current directory
 
 history shows a history of commands
 
+ctrl + r or #command can cycle through previous commands
+
+clear clears the screen (powershell)
+
+cls in command prompt ..
+
 === Linux === 
 -
 linux has two operations for "help"
@@ -20,6 +26,10 @@ man (command name), and (command name) --help
 
 ls -l shows extra details, and stands for long
    -a shows hidden
+   
+history does the same thing
+
+clear clears the screen
 
 ==== Both ====
 -
