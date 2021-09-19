@@ -1,7 +1,8 @@
 # administrationnotes
 
 ....... Windows ===
-• hidden files quick reference: its found in the view tab
+
+hidden files quick reference: its found in the view tab
 
 ls -force shows hidden
 
