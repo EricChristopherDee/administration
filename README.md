@@ -40,6 +40,11 @@ clear clears the screen
 head name of file
 tail name of file shows only 10 lines each
 
+2> removes error messages from a pending output
+
+| passes output from one command to another new command
+   ie ls folders | grep specific folder to check if a folder exists in a directory
+
 ==== Both ====
 -
 pwd means print working directory
