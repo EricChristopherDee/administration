@@ -44,6 +44,33 @@ tail name of file shows only 10 lines each
 
 | passes output from one command to another new command
    ie ls folders | grep specific folder to check if a folder exists in a directory
+   
+cat shows the contents of a file if not concatenating multiple files
+
+   Recap:
+      ls - l shows extra info like ownership
+      ls - a shows hidden files
+      pwd brings you the current directory
+      single file cat shows the contents
+      less allows easier reading of files with many characters
+      multiple directories can be made with a single mkdir command using spaces
+      
+      mkdir:  
+         -p: allow mkdir to create parent directories if they don't exist
+         -m: (mode) used to set permissions of directories during creation
+         -v: run command in verbose mode
+     
+     touch:
+         -c doesn't create if already exists
+         
+     grep:
+     
+       -r: search recursively
+       -w: match the whole word
+       -n: only in line number
+       -e: match pattern
+       --include and --exclude: include and exclude files in the search
+       --include-dir and --exclude-dir: include or exclude directories in the search
 
 ==== Both ====
 -
