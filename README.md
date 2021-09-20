@@ -2,6 +2,8 @@
 
 ....... Windows === 
 -
+The course instructor uses powershell
+
 hidden files quick reference: its found in the view tab
 
 ls -force shows hidden
