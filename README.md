@@ -26,6 +26,8 @@ more shows all contents with a prompt for each section
 
 cat -head or cat -tail with a number ie cat -head 10 shows the file up to those lines, like more does 
 
+a useful tool for compressing: Compress-Archive -Path name1, name2, name3 names.zip
+
 === Linux === 
 -
 linux has two operations for "help"
