@@ -35,7 +35,7 @@ a useful tool for compressing: Compress-Archive -Path name1, name2, name3 names.
     both helpful alternatives
     
     run:
-    eventvwr.msc
+    • eventvwr.msc
 
 === Linux === 
 -
