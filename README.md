@@ -28,10 +28,11 @@ cat -head or cat -tail with a number ie cat -head 10 shows the file up to those 
 
 a useful tool for compressing: Compress-Archive -Path name1, name2, name3 names.zip
 
-cmdlets:
-   • tasklisk
-   • Get-Process
-   both helpful alternatives
+    cmdlets:
+    • tasklisk
+    • Get-Process
+    
+    both helpful alternatives
 
 === Linux === 
 -
