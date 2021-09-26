@@ -31,6 +31,7 @@ a useful tool for compressing: Compress-Archive -Path name1, name2, name3 names.
     cmdlets:
     • tasklisk
     • Get-Process
+    • Stop-Process
     
     both helpful alternatives
     
