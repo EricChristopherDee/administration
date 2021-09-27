@@ -33,8 +33,8 @@ a useful tool for compressing: Compress-Archive -Path name1, name2, name3 names.
     • Get-Process
     • Stop-Process
     • ICACLS for permission
-    
-    both helpful alternatives
+    • Start-Service
+    • Stop-Service
     
     run:
     • eventvwr.msc
