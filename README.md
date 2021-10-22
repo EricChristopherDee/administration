@@ -1,6 +1,6 @@
 # mysys/bash
-pacman -Ss "package" gets a list of packages with that name
-pacman -S installs a package using the name
+    pacman -Ss "package" gets a list of packages with that name
+    pacman -S installs a package using the name
 
 # administrationnotes
 
