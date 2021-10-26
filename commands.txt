@@ -1,11 +1,13 @@
-# mysys/bash
+    # mysys/bash
     pacman -Ss "package" gets a list of packages with that name
     pacman -S installs a package using the name
 
-# administrationnotes
+    # administrationnotes
 
 ....... Windows === 
--
+
+    -
+
 The course instructor uses powershell
 
 hidden files quick reference: its found in the view tab
@@ -44,12 +46,14 @@ a useful tool for compressing: Compress-Archive -Path name1, name2, name3 names.
     • eventvwr.msc
 
 === Linux === 
--
+
+    -
+
 linux has two operations for "help"
 
 man (command name), and (command name) --help
 
-ls -l shows extra details, and stands for long
+ls (list segment) -l shows extra details, and stands for long
    -a shows hidden
    
 history does the same thing
