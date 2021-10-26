@@ -2,48 +2,88 @@ Eric Dee
 10.25.2021
 Cross-Site Web Scripting (XSS) 
 
-XSS, or Cross Site Scripting is a form of malicious software instructions that are not found in a file, or executable binary on your computer, but rather it defines such instructions as to be found on a host that is otherwise benign, on the internet.
+XSS, or Cross Site Scripting is a form of malicious software instructions that are not found in a file, 
+or executable binary on your computer, but rather it defines such instructions as to be found on a host 
+that is otherwise benign, on the internet.
 
-Typically a safe website would remain safe, but in some cases, vulnerabilities are found, and a would-be attacker has been enabled to place harmful web browser scripts on a website host directory, or structure.
+Typically a safe website would remain safe, but in some cases, vulnerabilities are found, and a would-be 
+attacker has been enabled to place harmful web browser scripts on a website host directory, or structure.
 
-It tends to show up in the form of a page with dynamic input content that can be changed depending on user action. Sometimes the user action is to send instructions to the server in a format which changes the website output in undesirable ways, which 
-are then retained by the browser in the form of cookies or other storage means. Sometimes this can appear in the form of corrupt data. Sites that use PHP might need specified HTML encoded outputs to prevent such attacks, as they can often present certain 
-vulnerabilities that are specific to the language. While javascript can as well, it is not as often directly related to the server.
+It tends to show up in the form of a page with dynamic input content that can be changed depending on 
+user action. Sometimes the user action is to send instructions to the server in a format which changes 
+the website output in undesirable ways, which 
+are then retained by the browser in the form of cookies or other storage means. Sometimes this can appear
+in the form of corrupt data. Sites that use PHP might need specified HTML encoded outputs to prevent such 
+attacks, as they can often present certain 
+vulnerabilities that are specific to the language. While javascript can as well, it is not as often 
+directly related to the server.
 
-When does XSS show up? It tends to show up when data is stored on a server that allows HTML. A user might post a piece of data that includes a script, and when another user retrieves that specific article, which includes an HTML script, it is then run, 
-with the potential to hijack sensitive components to the unsuspecting users browser, and limited resources. Depending on the users’ secure settings, and the targeted outcome of the malicious injection, the attack can become exponentially harmful.
+When does XSS show up? It tends to show up when data is stored on a server that allows HTML. A user might 
+post a piece of data that includes a script, and when another user retrieves that specific article, which 
+includes an HTML script, it is then run, 
+with the potential to hijack sensitive components to the unsuspecting users browser, and limited 
+esources. Depending on the users’ secure settings, and the targeted outcome of the malicious injection, 
+the attack can become exponentially harmful.
 
 How is XSS dangerous?
 
-XSS can be dangerous for a myriad of reasons. Target ads can be represented on a page that doesn’t intend to host them. Entire forms can be mocked to entice the user to submit details they would otherwise not wish to share. Cookies can be manipulated 
-to cause site behavior that isn’t realized to be unrepresentative of the intended message. Content of the hijacked website can be changed in a targeted way. Alerts can be spoofed to convince the user to desensitize their network information. An injected 
-script can initiate unauthorized downloads that are not from the authoritative owner, or that closely mimic a desired outcome so as to influence the user choice to execute a malicious software, thus infecting their computer. The central processing unit 
-of the victim can be used for resources. Sometimes unbeknownst to the victim. This may happen in the form of crypto mining. Keylogging can occur, and all of your keypresses can be collected and sent over the internet. With the advent of more sophisticated 
-programming, your browser can record video and audio, allowing scripted XSS attacks to potentially gain access to your privacy, and devices. Pictures can be taken this way, to further invade your privacy, up to the extent that they can then be used to 
-potentially harass, or otherwise delegitimize your sense of security. As such, your location can also sometimes be determined. Your settings can be found. Your network can be scanned, your browser redirects can be influenced, and in some more creative 
-ways of XSS attack obfuscation, the browsers time mechanics can be utilized to make the attack happen at times the user is more likely to be away from their desk.
+XSS can be dangerous for a myriad of reasons. Target ads can be represented on a page that doesn’t intend 
+to host them. Entire forms can be mocked to entice the user to submit details they would otherwise not wish 
+to share. Cookies can be manipulated 
+to cause site behavior that isn’t realized to be unrepresentative of the intended message. Content of the 
+hijacked website can be changed in a targeted way. Alerts can be spoofed to convince the user to 
+desensitize their network information. An injected 
+script can initiate unauthorized downloads that are not from the authoritative owner, or that closely mimic 
+a desired outcome so as to influence the user choice to execute a malicious software, thus infecting their 
+computer. The central processing unit 
+of the victim can be used for resources. Sometimes unbeknownst to the victim. This may happen in the form 
+of crypto mining. Keylogging can occur, and all of your keypresses can be collected and sent over the 
+internet. With the advent of more sophisticated 
+programming, your browser can record video and audio, allowing scripted XSS attacks to potentially gain 
+access to your privacy, and devices. Pictures can be taken this way, to further invade your privacy, up to 
+the extent that they can then be used to 
+potentially harass, or otherwise delegitimize your sense of security. As such, your location can also 
+sometimes be determined. Your settings can be found. Your network can be scanned, your browser redirects 
+can be influenced, and in some more creative 
+ways of XSS attack obfuscation, the browsers time mechanics can be utilized to make the attack happen at 
+times the user is more likely to be away from their desk.
 
 How can XSS be prevented?
 
-XSS can often be prevented using encoding. Many frameworks have built in processes that return only formatted HTML, and do not allow scripts to be run beyond a specific scope. There are libraries called sanitizers that will parse a websites HTML, and 
-filter terms that are potentially malicious.
+XSS can often be prevented using encoding. Many frameworks have built in processes that return only 
+formatted HTML, and do not allow scripts to be run beyond a specific scope. There are libraries called 
+sanitizers that will parse a websites HTML, and filter terms that are potentially malicious.
 
-XSS can also be prevented using the Content Security Policy (CSP). This policy adds security to a website. This means that the browser will contain a whitelist of allowed domains, or IP addresses from which scripting injections are allowed. If the source 
+XSS can also be prevented using the Content Security Policy (CSP). This policy adds security to a website. 
+This means that the browser will contain a whitelist of allowed domains, or IP addresses from which 
+scripting injections are allowed. If the source 
 is not that of a whitelisted domain, then it will not be allowed onto the server.
 
-A prevention model can be used to assign sectional HTML outputs with varying levels of security. Software should always be kept up to date to reduce bugs, address known security issues, improve performance, and patch in depth security routes that might 
-not be entirely fixable. This is known to generally reduce the likelihood that your site will be the target of an outdated attack vector. You should be expecting yourself to audit your website on a regular basis. All input fields should be validated before 
-submission. If not, they are extremely vulnerable to opening a door for attackers at your website. As a double precaution, both client side, and server side validation methods should be put in place, and implemented throughout the course of your entire website. 
-Firewalls can also be used to slow the flow of attacks, which can often be blocked before the execution of a script, and to keep port usage at a minimum controlled state. Additionally, certain data transfer protocols may be more likely to thwart attacks due 
-to various time to live differences, and ease of use. While not the highest priority, still something to keep in mind.
+A prevention model can be used to assign sectional HTML outputs with varying levels of security. Software 
+should always be kept up to date to reduce bugs, address known security issues, improve performance, and 
+patch in depth security routes that might 
+not be entirely fixable. This is known to generally reduce the likelihood that your site will be the target 
+of an outdated attack vector. You should be expecting yourself to audit your website on a regular basis. 
+All input fields should be validated before 
+submission. If not, they are extremely vulnerable to opening a door for attackers at your website. As a 
+double precaution, both client side, and server side validation methods should be put in place, and 
+implemented throughout the course of your entire website. 
+Firewalls can also be used to slow the flow of attacks, which can often be blocked before the execution of a 
+script, and to keep port usage at a minimum controlled state. Additionally, certain data transfer protocols 
+may be more likely to thwart attacks due 
+to various time to live differences, and ease of use. While not the highest priority, still something to 
+keep in mind.
 
 Examples of XSS
 
-An attacker might locate a dynamic header on a webpage from which to store an invalid script that loads for all users on the website.
+An attacker might locate a dynamic header on a webpage from which to store an invalid script that loads for 
+all users on the website.
 
-An attacker might store a function on a data form, which listens for connections, and executes a script upon each submit action, resulting in the loss of your data to the attacker.
+An attacker might store a function on a data form, which listens for connections, and executes a script upon 
+each submit action, resulting in the loss of your data to the attacker.
 
-An attacker might locate a vulnerability to store user specific cookies on your browser, that allow the content of the site to be manipulated specific to your settings.
+An attacker might locate a vulnerability to store user specific cookies on your browser, that allow the 
+content of the site to be manipulated specific to your settings.
 
 References:
 https://owasp.org/www-community/attacks/xss/
