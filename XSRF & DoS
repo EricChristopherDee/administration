@@ -1,0 +1,88 @@
+Cross-Site Request Forgery & Denial of Service
+Eric Dee
+October Twenty Sixth, Two Thousand and Twenty One
+
+A cross site forgery is a computerized attack in which the target executes specified
+actions determined or desired by the attacker, on an application with which they
+have unique authoritative access credentials to. It occurs because in some way or
+another, the victim, or target has been influenced, or otherwise convinced to supply
+specific portions to their credentials that allow their identification (credentials)
+to become compromised. Since the majority of common websites use cookies, or other
+localized files on a user browser for unique login and identity functionality, a
+compromised account may go unnoticed, as the cross site request forgery is meant to
+mimic the authoritative, or authentic credentials. This type of attack specifically
+targets an action possible for the victim, and not their data alone. Paired with
+social engineering, some data can be stolen, such as credit card information, names,
+or addresses. This may occur if the victim is convinced to log in to a mock profile,
+or to set up an account on a spoofed URL.
+
+This would seem insufficient to cause alarm, but because the victim is always logged
+in due to their credentials, all the attacker needs to do, is create a CRUD, or
+typical/mimicked API patch, and entice the victim to submit the form. By observing
+the API behavior of a target website, such as a bank account API, or credit card
+transfer API, one can build an HTML mockup that submits information using the victims
+data, and pre-authenticated credentials, by for example, displaying an image to click
+on their most visited websites, a social media page, or by sending it to them in an
+email. Once clicked, the form request/post data is automatically identified as valid,
+and the attacker has then bypassed their required login state change, due to the fact
+that they are already authenticated.
+
+There are some prevention measures that are not sufficient in securing your website
+from such an attack. Using secret cookies will still allow the user to log in
+automatically, as it is meant to be more difficult to discover, but still keeps
+authentication in tact. As discussed, POST requests are not sufficient to prevent a
+preconceived form from executing. Neither will multi-step transactions. The URL can
+be rewritten, but sufficient exposure must still be made to the victim’s session in
+order for the website functionality to allow access back to it.
+
+A denial of service attack is considered to have occurred when a user or group of
+users are unable to access a conglomerate IT, devices, and other generalized network
+related incoming and outgoing streams, because of a targeted decision from an outside
+source. This can be email related, website related, and banking related, and may
+include any form in which a connection is required to access a resource. Denial of
+service (DoS) attacks are considered to have happened when said resource becomes
+inaccessible as the result of overrunning the target’s host system, or network,
+thereby making too many requests as to prevent other users from having access in an
+operational means, or with a reasonable response time, typically causing time to live
+errors, and other browser crashes resulting from stalling responses.
+
+To avoid being overridden by a denial of service attack, seek information from your
+web service provider, as they are usually going to be the first line of defense, due
+to the fact that they are hosting your services, and there are no other controls
+physically speaking in your means for the server itself. Check if they have denial of
+service protection services that allow for traffic flow filtering which sends traffic
+elsewhere. Using load balancers, and site record round robin techniques can help keep
+traffic issues to a minimum, and optimize/keep record of traffic before, during and
+after any potential attacks to help identify potential firewall needs or changes, as
+well as preventative software measures to implement.
+
+These are highly impactful on large scale projects, and even personal ones. I myself
+have experienced DoS issues on simple wordpress blog applications, and it is already
+known that some would be attackers will scan the internet for vulnerable IP addresses
+at random. Having any publicly available message board or forum opens you up to many
+bot related attacks on principle of having the site alone. This only scales as more
+people find and visit your site. As a result, much more time is needed to carefully
+craft a web page that takes these kind of issues into account, and every web developer
+is required to learn some of the more in depth processes of server related functions,
+not just as a generalized educational process, but out of necessity, whether they have
+an interest in said processes or not. It requires that you become aware of many
+different potential threats, and that you stay up to day on recent downfalls in any of
+your frameworks, along with all of the frameworks that you might have a passing
+interest in. Potentially going with the stronger framework for a certain project,
+rather than using one you just prefer to use, and keeping company resources, and
+personnel in mind. These two issues specifically require that you keep a well
+documented series of procedures to follow pertaining to potential exposures, and to
+develop better practices with your code, especially when utilizing vital API methods,
+that expose details and data about users and your company by default. An HTML page
+should be as secure as possible when using data transfer protocols, especially if
+scripting languages are involved. As users demand more and more easy to access objects,
+there is a constant need to improve authenticated concepts in order to maintain the
+status quo, and not all teams or companies have the interest in, or funding to provide
+every team with a dedicated security expert. This means that as a web developer, you
+will need to have an exceptional library of information related to the subject, in
+order to provide your customers with the best possible product.
+
+References:
+https://owasp.org/www-community/attacks/csrf
+https://us-cert.cisa.gov/ncas/tips/ST04-015
+https://aws.amazon.com/shield/ddos-attack-protection/
