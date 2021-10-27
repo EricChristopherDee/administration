@@ -1,0 +1,80 @@
+Buffer Overflow and SQL Injection
+Eric Dee
+October Twenty Seventh, Two Thousand And Twenty One
+
+To begin understanding buffer overflow, what a buffer is should be addressed first. A buffer is a 
+section of memory on RAM (Random Access Memory), that is write-able memory, used to access data 
+objects in a software application. Each item in memory that the application uses stores certain 
+pieces of the program, and settings with which your computer uses to operate its functions. 
+Sometimes the data is for letters and numbers on your screen. Other times it is for screen item 
+locations, and pixel memory. Even sound programs use a buffer. The programs that utilize buffers 
+the most are programs that have varying needs, which must be met in a timely fashion. Often times, 
+there are so many needs at once that the time it takes to run all of the requests at once would 
+become noticeable, as the CPU could not keep up with every process. To address these types of 
+needs, a programming technique called buffering is introduced. This is when parts of your 
+computer like the Random Access Memory (RAM), or video card, or even extra registers for the CPU 
+are used to process data ahead of itself, and piece it back together when the time calls for it.
+
+A buffer overflow occurs when the amount of memory that the program is allotted for such types of 
+processes is provided with chains of data that are supposed to be longer than the actual buffer 
+can read. Usually there is a header section for each payload, or body of data that is used to tell 
+the “buffer” how much to read, and when the incoming or outgoing data doesn’t match these values, 
+it becomes segmented, and unreadable. Most people have probably heard this happen once or twice 
+when their sound buffer overflowed, and their speakers produced choppy audio playback. Typically 
+this is fixed by resetting the buffer, or unplugging and plugging back in your speakers, otherwise 
+it can indicate soundcard issues, or issues with your audio formatting.
+
+The same type of thing can happen on the internet, and if intentional causes a variety of 
+frustrating web interactions.
+
+A buffer overflow attack happens when a site vulnerability is found that allows an attacker to 
+target a server, or a services production means with which it uses to present you with its products. 
+If a weakly formatted submission page is in place, or there are not strong enough data connection, 
+or storage restrictions, then the website may become dysfunctional due to the intended mis-use of 
+its defined data-types and or connective inputs. Like previously covered scripting attacks, certain 
+instructions can be written into sections of memory that alter a services ability to present itself. 
+If buffering methods are not secure, and are of the type to self rewrite, this poses severe 
+problems, as a tech savvy hacker can simply inject new code into other parts of the service by 
+simply forcing the buffer past its limit, and to end on a certain section of code that will send the 
+remainder of the service to an external malicious service, or event.
+
+Buffer overflows pose a variety of potential issues, because the nature of software development is 
+the freedom of computer possibility that it offers, and as a result of the allowance of so many 
+different outcomes related to memory locations, and external services; is exploitable.
+
+Things that can be done to prevent buffer overflow include controlling who has access to sections of 
+code that do not relate directly to an API, and ensuring the use of protected methods in methods that 
+do not need to be exposed publicly. They also require contained, and counted methods that use 
+validation to ensure that appropriate buffer rates are maintained, and that sections of processes 
+cannot be overwritten. It must also be ensured that indexes are kept accurate.
+
+SQL injection occurs when an API or form includes the allowance to access a server of data without, 
+or with less restrictive means than it probably should. When the database is too accessible, query 
+scripts can be run against the server database to retrieve data that is not intended to be given out. 
+Along with this, having too available of a database will allow an attacker to insert values into the 
+database that are beyond its exceptions, causing misrepresented outputs, or overwritten/corrupt 
+results.
+
+Avoidance of SQL injections includes programmatically monitoring user requests, and concatenating any 
+unwanted values from them. This is called sanitization. Validation of allowed query methods should 
+also be used, along with controlling the API functionality. Some extra precautions should also be 
+taken to ensure certain standards are met in the event that any data breach or alteration were to 
+occur. This includes setting constraints on your data that ensure no information is qualified in a 
+completely stored state. Things like full credit card numbers should not be saved without sufficient 
+encryption, and keys should be virtually inaccessible. Having varying levels of routes that hold 
+varying access points to restricted methods could be paramount to keeping potential breaches, or 
+attempted breaches at bay. This sets a layer of resistive code (pathways) to a would be attacker.
+
+These different types of vulnerabilities are the most impactful on the image of a website, and its 
+trustability, or how reliable it is. Once a customer receives broken data, they will lose trust in 
+your ability to operate a successful practice, and this can affect the entire future of that company 
+if it is not remedied in an appropriate way. If data is stolen, or a consumer/product is maliciously 
+misdirected, there can be legal repercussions. Especially when credit card information is involved, 
+as there are very strict regulations which all companies are required to adhere to when handling the 
+transfer and storage of sensitive credit card information. As soon as an exposure takes place, your 
+company is put at risk.
+
+References:
+https://www.imperva.com/learn/application-security/buffer-overflow/
+https://owasp.org/www-community/vulnerabilities/Buffer_Overflow
+https://www.barracuda.com/glossary/sql-injection/
