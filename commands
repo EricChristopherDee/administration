@@ -1,12 +1,19 @@
+Docker:
+    docker build ./ -t containername
+    docker run -it -v "${pwd}:/root/env" --rm containername [powershell]
+    
+================
+    
+MySys2:
     # mysys/bash
     pacman -Ss "package" gets a list of packages with that name
     pacman -S installs a package using the name
 
-    # administrationnotes
+================
 
 ....... Windows === 
 
-    -
+-
 
 The course instructor uses powershell
 
@@ -45,9 +52,11 @@ a useful tool for compressing: Compress-Archive -Path name1, name2, name3 names.
     run:
     • eventvwr.msc
 
+================
+
 === Linux === 
 
-    -
+-
 
 linux has two operations for "help"
 
@@ -95,6 +104,10 @@ cat shows the contents of a file if not concatenating multiple files
        --include and --exclude: include and exclude files in the search
        --include-dir and --exclude-dir: include or exclude directories in the search
 
-==== Both ====
+================
+
+==== Windows or Linux ====
+
 -
+
 pwd means print working directory
