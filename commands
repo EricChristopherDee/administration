@@ -37,7 +37,7 @@ Windows:
 ================
 
 Linux: 
-    •gzip, gunzip, bzip2
+    • gzip, gunzip, bzip2, bzip2 -d, -df (toss original, or keep)
     • tar -cvf (compress), xvf (extract), rvf (add), tvf (show)
     • rm -r, -rf, -rvf
     • ls -l, ls -lh (detailed)
