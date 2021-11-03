@@ -41,6 +41,7 @@ Linux:
     • tar -cvf (compress), xvf (extract), rvf (add), tvf (show)
     • rm -r, -rf, -rvf
     • ls -l, ls -lh (detailed)
+    -
     • linux has two operations for "help"
     • man (command name), and (command name) --help
     • ls (list segment) -l shows extra details, and stands for long
